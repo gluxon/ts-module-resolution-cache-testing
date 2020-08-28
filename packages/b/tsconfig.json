@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "files": ["src/b.ts"],
+  "references": [{ "path": "../c" }]
+}

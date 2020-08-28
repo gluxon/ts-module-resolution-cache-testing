@@ -1,0 +1,1 @@
+export function fb36c999(str: string) { console.log(str); }

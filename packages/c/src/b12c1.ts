@@ -1,0 +1,1 @@
+import { b12c2 } from "./b12c2"; export const b12c1 = b12c2;

@@ -1,0 +1,1 @@
+import { b2c265 } from "./b2c265"; export const b2c264 = b2c265;

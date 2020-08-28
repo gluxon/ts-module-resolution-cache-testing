@@ -1,0 +1,1 @@
+import { b22c836 } from "./b22c836"; export const b22c835 = b22c836;

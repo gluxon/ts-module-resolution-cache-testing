@@ -1,0 +1,1 @@
+export function fb3c999(str: string) { console.log(str); }
