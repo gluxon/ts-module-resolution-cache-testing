@@ -1,4 +1,4 @@
-This is a dummpy TypeScript repo with 3 packages.
+This is a dummy TypeScript repo with 3 packages.
 
 - `a` depends on `c`.
 - `b` depends on `c`.
