@@ -1,9 +1,10 @@
 #!/bin/sh
 
 tsserverPath="/Volumes/git/TypeScript/built/local/tsserver.js"
+dir=$(pwd)
 
-request1='{"seq":0,"type":"request","command":"open","arguments":{"file":"/Volumes/git/ts-test-repo/packages/a/src/a.ts"}}'
-request2='{"seq":0,"type":"request","command":"open","arguments":{"file":"/Volumes/git/ts-test-repo/packages/b/src/b.ts"}}'
+request1="{\"seq\":0,\"type\":\"request\",\"command\":\"open\",\"arguments\":{\"file\":\"$dir/packages/a/src/a.ts\"}}"
+request2="{\"seq\":0,\"type\":\"request\",\"command\":\"open\",\"arguments\":{\"file\":\"$dir/packages/b/src/b.ts\"}}"
 
 timestamp=$(date +%s)
 timestampLogFile="tsserver-$timestamp.log"
