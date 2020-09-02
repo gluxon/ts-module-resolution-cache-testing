@@ -20,7 +20,7 @@ request2="{\"seq\":0,\"type\":\"request\",\"command\":\"open\",\"arguments\":{\"
 timestamp=$(date +%s)
 timestampLogFile="tsserver-$timestamp.log"
 
-echo "$request1\n$request2" | node "$@" $tsserverPath --disableAutomaticTypingAcquisition --logFile "$timestampLogFile"
+echo "$request1\n$request2" | node "${@:2}" $tsserverPath --disableAutomaticTypingAcquisition --logFile "$timestampLogFile"
 
 if command -v rg &> /dev/null
 then
