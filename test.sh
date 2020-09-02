@@ -1,6 +1,17 @@
 #!/bin/sh
 
-tsserverPath="/Volumes/git/TypeScript/built/local/tsserver.js"
+if [ $# -eq 0 ]; then
+  echo "Please provide a path to tsserver.js as the first argument"
+  exit 1
+fi
+
+tsserverPath="$1"
+
+if [ ! -f "$1" ]; then
+  echo "File at given path for tsserver.js does not exist"
+  exit 1
+fi
+
 dir=$(pwd)
 
 request1="{\"seq\":0,\"type\":\"request\",\"command\":\"open\",\"arguments\":{\"file\":\"$dir/packages/a/src/a.ts\"}}"
